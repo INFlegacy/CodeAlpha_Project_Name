@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+      <section class="header">
+           <a href=""><img src="/images/logo.svg"></a>
+      </section>
+      <section class="container">
+        <h1>Temprature Converter</h1>
+        <p class="temOutput" id="output"> </p>
+        <form>
+            <table class="">
+                <tbody>
+                    <tr class="tr">
+                        <td>
+                             <label for="text">From:</label><br>
+                            <input type="text" name="text" id="tempUnit" onkeyup="temUnit()">
+                        </td>
+                        <td>
+                             <label for="text">To:</label> <br>
+                            <input type="text" name="text" id="tempResult" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="" id="ucfromunit" size="3" onchange="ucUpdateResult()" class="ucselect">
+                                <option value="Celsius [°C] [2:-272.15:-273.15]" selected>Celsius [°C]</option>
+                                <option value="kelvin [K] [2:1:0]">Kelvin [K]</option>
+                                <option value="Fahrenheit [°F] [2:-457.87:-459.67]">Fahrenheit [°F]</option> 
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="ucTounit" size="3" onchange="ucFinalResult()">
+                                <option value="Fahrenheit [°F] [2:-457.87:-459.67]" selected>Fahrenheit [°F]</option>
+                                <option value="Celsius [°C] [2:-272.15:-273.15]">Celsius [°C]</option>
+                                <option value="kelvin [K] [2:1:0]">Kelvin [K]</option>
+                            </select>
+                         </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+      </section>
+      <section class="ucDetails">
+        <div class="ucPop">
+            <h3>Popular temperature unit conversions</h1>
+        </div>
+        <div class="Popuc">
+            <div>
+                <ul>
+                    <li><a href="">Celsius to Fahrenheit</a></li>
+                    <li><a href="">Celsius to Kelvin</a></li>
+                    <li><a href="">Fahrenheit to Kelvin</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Fahrenheit to Celsius</a></li>
+                    <li><a href="">Kelvin to Celsius</a></li>
+                    <li><a href="">Kelvin to Fahrenheit</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cmpLstuc">
+           <h3>Complete list of temperature units for conversion</h3>
+        </div>
+        <div class="unitCon">
+            <ul>
+                <li>kelvin [K]</li>
+                <li>1 Celsius [°C] = 274.15 kelvin [K] <br> <a href="">Celsius to kelvin ,</a><a href=""> kelvin to Celsius</a></li>
+                <li>1 Fahrenheit [°F] = 255.9277777778 kelvin [K] <br> <a href="">Fahrenheit to kelvin,</a><a href="">kelvin to Fahrenheit</a></li>         
+            </ul>
+        </div>
+      </section>
+
+      <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body{
+    background-color: #85dcb8;
+}
+.header{
+    background-color: #063;
+    text-align: center;
+    height: 36px;
+}
+.header img{
+    width: 288px;
+    height: 28;
+    justify-content: center;
+}
+.container{
+    margin-left: 200px;  
+      
+}
+.container h1{
+    color: #063;
+    margin-top: 50px;
+}
+.container p{
+     margin-left: 150px;
+     margin-top: 20px;
+}
+input{
+    background-color: rgb(195, 243, 219);
+}
+select{
+    background-color:rgb(195, 243, 219) ;
+}
+
+ 
+table{
+       
+    
+    border-collapse: separate;
+    border-spacing:10px ;
+    
+}
+.ucDetails{
+    margin: 80px 0px 0px 200px  ;
+}
+.ucPop h3 {
+    color: #063;
+    
+}
+.Popuc{
+    display: flex;
+    text-align: start;
+}
+.Popuc li {
+    list-style: none;
+    
+    
+}
+.Popuc li a{
+    color: #063;
+}
+.cmpLstuc h3{
+    color: #063;
+    margin-top: 50px;
+}
+.unitCon{
+     text-align: justify;
+
+      
+}
+.unitCon ul a {
+    color: #063;
+    font-size: larger;
+} 
